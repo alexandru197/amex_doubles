@@ -1,2 +1,4 @@
-model\Transaction.class
 TransactionController.class
+Verifier.class
+TransactionProcess.class
+model\Transaction.class

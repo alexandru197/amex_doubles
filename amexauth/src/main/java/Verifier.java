@@ -4,20 +4,27 @@ import model.Merchant;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Verifier
 {
-    static ArrayList <Card> cards = new ArrayList<Card>() ;
-    static ArrayList <Merchant> merchants = new ArrayList<Merchant>() ;
-    public static void main(String[] args)
-    {
-        Card card = new Card( ) ;
-        cards . add ( card ) ;
-        Merchant merchant = new Merchant ( ) ;
-        merchant.setId("431531531");
-        merchants.add ( merchant ) ;
-        System.out.println ( verifyTransaction ( "AAAAAAAAAAAAAAA" , "1234" , 190, "431531531") ) ;
+    static List<Card> cards;
+    static List<Merchant> merchants;
+
+    public Verifier(List<Card> cards, List<Merchant> merchants) {
+        this.cards = cards;
+        this.merchants = merchants;
     }
+//
+//    public static void main(String[] args)
+//    {
+//        Card card = new Card( ) ;
+//        cards . add ( card ) ;
+//        Merchant merchant = new Merchant ( ) ;
+//        merchant.setId("431531531");
+//        merchants.add ( merchant ) ;
+//        //System.out.println ( verifyTransaction ( "AAAAAAAAAAAAAAA" , "1234" , 190, "431531531") ) ;
+//    }
     public static boolean verifyTransaction(String cardNumber, String CVV, double amount, String merchantId)
     {
         int index = getCardIndex ( cardNumber ) ;
@@ -34,14 +41,23 @@ public class Verifier
         {
             return false ;
         }
-        double balance = card.getBalance() ;
-        if ( negativeTransaction( balance , amount ) )
+        double limit = card.getCreditLimit() ;
+        if ( negativeTransaction( limit, card.getBalance() , amount ) )
         {
             return false ;
         }
 
+        if (negValue(amount)) {
+            return false;
+        }
+
         return true ;
     }
+
+    public static boolean negValue(double amount) {
+        return amount < 0;
+    }
+
     public static boolean validCVV ( Card card  , String CVV )
     {
         String originalCVV = card.getVerifNumber() ;
@@ -64,9 +80,9 @@ public class Verifier
         }
         return -1 ;
     }
-    public static boolean negativeTransaction ( double balance , double amount )
+    public static boolean negativeTransaction ( double limit, double balance , double amount )
     {
-        return balance <= amount ;
+        return limit - balance <= amount ;
     }
     public static boolean expired ( Date expiration )
     {

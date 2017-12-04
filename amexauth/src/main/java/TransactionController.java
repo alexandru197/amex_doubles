@@ -21,21 +21,26 @@ public class TransactionController {
 
     static CardIssuer cardIssuer;
 
-    @Autowired
-    CardIssuer issuer;
-
     @RequestMapping(value = "/submit",
             method=RequestMethod.POST,
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     String submitTransaction(@RequestBody Transaction transaction) {
+        Verifier verifier = new Verifier(cardIssuer.getCards(), cardIssuer.getMerchants());
+        boolean valid = Verifier.verifyTransaction(transaction.getCardNumber(), transaction.getCvv(), transaction.getAmount(), transaction.getMerchantID());
+
+        if (!valid) {
+            return "{\"message\": \"invalid transaction\"}";
+        }
+
         TransactionProcess.process(transaction);
 
         return "{\"message\": \"ok\"}";
     }
 
     public static void main(String[] args) throws Exception {
+        cardIssuer = new CardIssuer();
         SpringApplication.run(TransactionController.class, args);
     }
 

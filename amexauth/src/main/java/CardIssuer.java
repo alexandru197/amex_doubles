@@ -21,6 +21,14 @@ public class CardIssuer {
         initData();
     }
 
+    public List<Card> getCards() {
+        return cards;
+    }
+
+    public List<Merchant> getMerchants() {
+        return merchants;
+    }
+
     public void initData() {
         initCardMembers();
         initCards();
@@ -126,9 +134,6 @@ public class CardIssuer {
         for (String line : cardText) {
             String[] parts = line.split(",");
 
-
-            Merchant merchant = new Merchant(parts[0], parts[1], parts[2], 0, Double.valueOf(parts[13]));
-            merchants.add(merchant);
             CardMember cardMember = new CardMember(parts[0], parts[1], parts[2]);
             members.add(cardMember);
         }
