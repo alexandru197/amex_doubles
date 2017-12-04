@@ -50,5 +50,18 @@ public class CardMember {
         this.lastName=lastName;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+
+        CardMember member = (CardMember) obj;
+        if (member.id != id) {
+            return false;
+        }
+
+        return true;
+    }
 
 }

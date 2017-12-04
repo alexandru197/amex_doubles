@@ -21,7 +21,7 @@ public class TransactionController {
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     String submitTransaction(@RequestBody Transaction transaction) {
-        issuer.processTransaction(transaction);
+        //issuer.processTransaction(transaction);
         return "{\"message\": \"ok\"}";
     }
 
