@@ -6,43 +6,49 @@ public class CardMember {
     private String firstName;
     private String lastName;
     private String email;
+    private String streetAddr;
+    private String city;
+    private long post_code;
+    private String country;
+    private int phone;
 
-    public CardMember(int id, String firstName, String lastName, String email) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+    CardMember(){
+        id=0;
+        firstName="";
+        lastName="";
+
     }
-
-    public int getId() {
+    public CardMember(int id, String firstName,String lastName){
+        this.id=id;
+        this.firstName=firstName;
+        this.lastName=lastName;
+    }
+    public void addMoreInfo(String email,String streetAddr,String city, long post_code,String country,int phone){
+        this.email=email;
+        this.streetAddr=streetAddr;
+        this.city=city;
+        this.post_code=post_code;
+        this.country=country;
+        this.phone=phone;
+    }
+    public int getId(){
         return id;
     }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int id){
+        this.id=id;
     }
-
-    public String getFirstName() {
+    public String getFirstName(){
         return firstName;
     }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String firstName){
+        this.firstName=firstName;
     }
-
-    public String getLastName() {
+    public String getLastName(){
         return lastName;
     }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String lastName){
+        this.lastName=lastName;
     }
 
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
