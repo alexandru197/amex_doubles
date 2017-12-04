@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/CardIssuer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -91,9 +91,9 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Merchant.java" />
         <option value="$PROJECT_DIR$/src/main/java/Manager.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CardIssuer.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/CardMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Card.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CardIssuer.java" />
       </list>
     </option>
   </component>
@@ -508,7 +508,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/CardIssuer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>

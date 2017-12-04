@@ -9,6 +9,10 @@ public class CardIssuer {
     }
 
     public boolean processTransaction(Transaction transaction) {
+        
+    }
+
+    public boolean validateTransaction(Transaction transaction) {
 
     }
 
