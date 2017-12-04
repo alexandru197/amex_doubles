@@ -17,8 +17,8 @@ public class TransactionController {
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
-    void submitTransaction(@RequestBody Transaction transaction) {
-
+    String submitTransaction(@RequestBody Transaction transaction) {
+        return "{\"message\": \"ok\"}";
     }
 
     public static void main(String[] args) throws Exception {
