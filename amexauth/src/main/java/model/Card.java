@@ -59,7 +59,7 @@ public class Card {
         }
 
         Card card = (Card) obj;
-        if (card.id != id) {
+        if (card.getCardNumber() != cardNumber) {
             return false;
         }
 

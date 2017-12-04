@@ -2,7 +2,7 @@ package model;
 
 public class CardMember {
 
-    private int id;
+    private String id;
     private String firstName;
     private String lastName;
     private String email;
@@ -12,13 +12,7 @@ public class CardMember {
     private String country;
     private int phone;
 
-    CardMember(){
-        id=0;
-        firstName="";
-        lastName="";
-
-    }
-    public CardMember(int id, String firstName,String lastName){
+    public CardMember(String id, String firstName,String lastName){
         this.id=id;
         this.firstName=firstName;
         this.lastName=lastName;
@@ -31,10 +25,10 @@ public class CardMember {
         this.country=country;
         this.phone=phone;
     }
-    public int getId(){
+    public String getId(){
         return id;
     }
-    public void setId(int id){
+    public void setId(String id){
         this.id=id;
     }
     public String getFirstName(){

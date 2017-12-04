@@ -1,6 +1,5 @@
-import model.Card;
-import model.CardMember;
-import model.Merchant;
+import model.*;
+
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -10,21 +9,16 @@ public class CardIssuer {
     private double balance;
     private List<Card> cards;
     private List<Merchant> merchants;
-    private Set<CardMember> members;
+    private List<CardMember> members;
 
     public CardIssuer() {
         cards = new ArrayList<Card>();
         merchants = new ArrayList<Merchant>();
-        members = new HashSet<CardMember>();
-        initTestData();
+        members = new ArrayList<CardMember>();
+        initData();
     }
 
-    public static void main(String[] args) {
-        CardIssuer cardIssuer = new CardIssuer();
-        cardIssuer.initTestData();
-    }
-
-    public void initTestData() {
+    public void initData() {
         initCardMembers();
         initCards();
         initMerchants();
@@ -61,18 +55,20 @@ public class CardIssuer {
                 e.printStackTrace(new PrintWriter(System.out));
             }
 
-            int id = Integer.valueOf(parts[0]);
-            CardMember member = null;
-            for (int i = 0; i < members.size(); ++i) {
-                member = members.get(i);
-                if (member.getId() == id) {
-                    break;
-                }
-            }
+            CardMember member = findMember(parts[0]);
 
-            Card card = new Card(, parts[1],parts[3], expiryDate, Double.valueOf(parts[4]));
+            Card card = new Card(member, parts[1],parts[3], expiryDate, Double.valueOf(parts[4]));
             cards.add(card);
         }
+    }
+
+    public CardMember findMember(String id) {
+        for (CardMember member : members) {
+            if (member.getId().equals(id)) {
+                return member;
+            }
+        }
+        return null;
     }
 
     public void initMerchants() {
@@ -126,17 +122,17 @@ public class CardIssuer {
         for (String line : cardText) {
             String[] parts = line.split(",");
 
-            Merchant merchant = new Merchant(Integer.valueOf(parts[0]), parts[1], parts[2], 0, Double.valueOf(parts[13]));
-            merchants.add(merchant);
+            CardMember cardMember = new CardMember(parts[0], parts[1], parts[2]);
+            members.add(cardMember);
         }
     }
 
-//    public boolean processTransaction(Transaction transaction) {
-//
-//    }
-//
-//    public boolean validateTransaction(Transaction transaction) {
-//
-//    }
+    public boolean processTransaction(Transaction transaction) {
+        return false;
+    }
+
+    public boolean validateTransaction(Transaction transaction) throws Exception {
+        return false;
+    }
 
 }
