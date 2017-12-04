@@ -22,11 +22,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Merchant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Merchant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+=======
+      <file leaf-file-name="TransactionController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TransactionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
               <folding>
                 <element signature="e#522#523#0" expanded="true" />
                 <element signature="e#547#548#0" expanded="true" />
@@ -35,6 +43,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Card.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,6 +66,62 @@
                 <element signature="e#1268#1269#0" expanded="true" />
                 <element signature="e#1304#1305#0" expanded="true" />
                 <element signature="e#1338#1339#0" expanded="true" />
+=======
+      <file leaf-file-name="CardIssuer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CardIssuer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#764#772#0" expanded="true" />
+                <element signature="e#2136#2144#0" expanded="true" />
+                <element signature="e#2978#2986#0" expanded="true" />
+                <element signature="e#3625#3626#0" expanded="true" />
+                <element signature="e#3653#3654#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Transaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+              <folding>
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#956#957#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/TransactionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <folding>
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
               </folding>
             </state>
           </provider>
@@ -74,6 +139,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CardIssuer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CardIssuer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,6 +170,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
     </leaf>
   </component>
   <component name="GradleLocalSettings">
@@ -114,6 +182,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/model/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/CardIssuer.java" />
@@ -123,6 +192,18 @@
         <option value="$PROJECT_DIR$/src/main/java/CardIssuer.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionProcess.java" />
+=======
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/TransactionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Merchant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Manager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Card.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/CardMember.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CardIssuer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TransactionController.java" />
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
       </list>
     </option>
   </component>
@@ -191,7 +272,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Modules" />
+=======
+    <property name="project.structure.last.edited" value="Global Libraries" />
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -341,7 +426,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
     <breakpoint-manager />
+=======
+    <breakpoint-manager>
+      <option name="time" value="14" />
+    </breakpoint-manager>
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -361,6 +452,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Merchant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -373,6 +465,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/CardMember.java">
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/NumberFormatException.java">
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
@@ -381,6 +476,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Card.java">
+<<<<<<< HEAD
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+          <folding>
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Merchant.java">
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="13" lean-forward="false" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
@@ -405,6 +528,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/model/CardIssuer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -419,15 +543,95 @@
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/CardMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CardIssuer.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#764#772#0" expanded="true" />
+            <element signature="e#2136#2144#0" expanded="true" />
+            <element signature="e#2978#2986#0" expanded="true" />
+            <element signature="e#3625#3626#0" expanded="true" />
+            <element signature="e#3653#3654#0" expanded="true" />
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/TransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="121">
           <caret line="87" column="53" lean-forward="true" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
           <folding />
+=======
+        <state relative-caret-position="283">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TransactionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 4bb919327984aa43b08ac542d0232347629467ab
         </state>
       </provider>
     </entry>

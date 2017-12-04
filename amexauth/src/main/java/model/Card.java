@@ -60,6 +60,7 @@ public class Card {
         }
 
         Card card = (Card) obj;
+
         if (!cardNumber.equals(card.getCardNumber())) {
             return false;
         }

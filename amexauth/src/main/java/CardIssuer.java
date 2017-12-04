@@ -18,15 +18,10 @@ public class CardIssuer {
         cards = new ArrayList<Card>();
         merchants = new ArrayList<Merchant>();
         members = new HashSet<CardMember>();
-        initTestData();
+        initData();
     }
 
-    public static void main(String[] args) {
-        CardIssuer cardIssuer = new CardIssuer();
-        cardIssuer.initTestData();
-    }
-
-    public void initTestData() {
+    public void initData() {
         initCardMembers();
         initCards();
         initMerchants();
@@ -63,18 +58,21 @@ public class CardIssuer {
                 e.printStackTrace(new PrintWriter(System.out));
             }
 
-            int id = Integer.valueOf(parts[0]);
 
-            for (CardMember member: members) {
-                if (member.getId().equals(id)) {
-                    Card card = new Card(member, parts[1],parts[3], expiryDate, Double.valueOf(parts[4]));
-                    cards.add(card);
-                    break;
-                }
-            }
+            CardMember member = findMember(parts[0]);
 
-
+            Card card = new Card(member, parts[1],parts[3], expiryDate, Double.valueOf(parts[4]));
+            cards.add(card);
         }
+    }
+
+    public CardMember findMember(String id) {
+        for (CardMember member : members) {
+            if (member.getId().equals(id)) {
+                return member;
+            }
+        }
+        return null;
     }
 
     public void initMerchants() {
@@ -128,14 +126,15 @@ public class CardIssuer {
         for (String line : cardText) {
             String[] parts = line.split(",");
 
+
             Merchant merchant = new Merchant(parts[0], parts[1], parts[2], 0, Double.valueOf(parts[13]));
             merchants.add(merchant);
+            CardMember cardMember = new CardMember(parts[0], parts[1], parts[2]);
+            members.add(cardMember);
         }
     }
 
-    public boolean processTransaction(Transaction transaction) {
-        return true;
-    }
+
 
     public static Card findCard (String s){
 
@@ -160,5 +159,10 @@ public class CardIssuer {
 //    public boolean validateTransaction(Transaction transaction) {
 //
 //    }
+
+
+    public boolean validateTransaction(Transaction transaction) throws Exception {
+        return false;
+    }
 
 }

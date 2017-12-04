@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Transaction {
 
+    String id;
+    String type;
+
     @JsonProperty("cardNumber")
     String cardNumber;
 
@@ -11,7 +14,7 @@ public class Transaction {
     String cvv;
 
     @JsonProperty("amount")
-    long amount;
+    double amount;
 
     @JsonProperty("merchantID")
     String merchantID;
@@ -20,7 +23,10 @@ public class Transaction {
 
     }
 
-    public Transaction(Card card, String cvv, long amount, String merchantID) {
+
+    public Transaction(String id, String type, String cardNumber, String cvv, double amount, String merchantID) {
+        this.id = id;
+        this.type = type;
         this.cardNumber = cardNumber;
         this.cvv = cvv;
         this.amount = amount;
@@ -43,7 +49,7 @@ public class Transaction {
         this.cvv = cvv;
     }
 
-    public long getAmount() {
+    public double getAmount() {
         return amount;
     }
 

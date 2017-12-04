@@ -24,6 +24,10 @@ public class Merchant {
         return id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
