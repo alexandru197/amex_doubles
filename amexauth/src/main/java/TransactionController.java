@@ -1,4 +1,3 @@
-import model.CardIssuer;
 import model.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.*;
@@ -21,7 +20,7 @@ public class TransactionController {
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     String submitTransaction(@RequestBody Transaction transaction) {
-        issuer.processTransaction(transaction);
+        //issuer.processTransaction(transaction);
         return "{\"message\": \"ok\"}";
     }
 

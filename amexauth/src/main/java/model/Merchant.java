@@ -2,17 +2,17 @@ package model;
 
 public class Merchant {
 
-    private int id;
+    private String  id;
     private String firstName;
     private String lastName;
-    private int balance;
+    private double balance;
     private double discountRate;
 
     public Merchant() {
 
     }
 
-    public Merchant(int id, String firstName, String lastName, int balance, double discountRate) {
+    public Merchant(String id, String firstName, String lastName, double balance, double discountRate) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -20,12 +20,8 @@ public class Merchant {
         this.discountRate = discountRate;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -44,11 +40,11 @@ public class Merchant {
         this.lastName = lastName;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

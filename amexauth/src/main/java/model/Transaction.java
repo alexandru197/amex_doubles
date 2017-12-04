@@ -14,13 +14,13 @@ public class Transaction {
     long amount;
 
     @JsonProperty("merchantID")
-    long merchantID;
+    String merchantID;
 
     public Transaction(){
 
     }
 
-    public Transaction(Card card, String cvv, long amount, long merchantID) {
+    public Transaction(Card card, String cvv, long amount, String merchantID) {
         this.cardNumber = cardNumber;
         this.cvv = cvv;
         this.amount = amount;
@@ -51,11 +51,11 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public long getMerchantID() {
+    public String getMerchantID() {
         return merchantID;
     }
 
-    public void setMerchantID(long merchantID) {
+    public void setMerchantID(String merchantID) {
         this.merchantID = merchantID;
     }
 }
