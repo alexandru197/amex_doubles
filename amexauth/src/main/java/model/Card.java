@@ -10,7 +10,7 @@ public class Card {
     private double rewardPoint;
     private double creditLimit;
 
-    Card(){
+    public Card(){
         cardNumber="AAAAAAAAAAAAAAA";
         verifNumber="1234";
         rewardPoint=0;
@@ -19,7 +19,7 @@ public class Card {
         creditLimit=0;
     }
 
-    Card(String cardNumber, String verifNumber,SimpleDateFormat expiryDate){
+   public  Card(String cardNumber, String verifNumber,SimpleDateFormat expiryDate){
 
         this.cardNumber=cardNumber;
         this.verifNumber=verifNumber;

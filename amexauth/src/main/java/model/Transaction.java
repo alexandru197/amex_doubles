@@ -20,7 +20,7 @@ public class Transaction {
 
     }
 
-    public Transaction(String cardNumber, String cvv, long amount, long merchantID) {
+    public Transaction(Card card, String cvv, long amount, long merchantID) {
         this.cardNumber = cardNumber;
         this.cvv = cvv;
         this.amount = amount;
